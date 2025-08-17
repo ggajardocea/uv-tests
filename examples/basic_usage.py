@@ -1,31 +1,30 @@
-#!/usr/bin/env python3
 """
-Main entry point for the UV Tests application.
+Basic usage example for the UV Tests application.
 """
 
 import sys
 from pathlib import Path
 
-# Add src directory to Python path
-src_path = Path(__file__).parent / "src"
+# Add src to path for imports
+src_path = Path(__file__).parent.parent / "src"
 sys.path.insert(0, str(src_path))
 
 from app.core.utils import get_python_version, get_system_info, format_version_info
 
 
 def main():
-    """Main application function."""
-    print("=== UV Tests Application ===")
+    """Demonstrate basic usage of the application."""
+    print("=== UV Tests Application - Basic Usage ===\n")
     
-    # Get and display Python version
+    # Get Python version
     version = get_python_version()
-    print(f"Python Version: {version}")
+    print(f"Current Python version: {version}")
     
-    # Display formatted version
+    # Format version info
     formatted = format_version_info(version)
     print(f"Formatted: {formatted}")
     
-    # Display system information
+    # Get system information
     print("\nSystem Information:")
     info = get_system_info()
     for key, value in info.items():
@@ -34,8 +33,8 @@ def main():
         else:
             print(f"  {key}: {value}")
     
-    print("\n=== Application Complete ===")
+    print("\n=== Example Complete ===")
 
 
 if __name__ == "__main__":
-    main()
+    main() 
