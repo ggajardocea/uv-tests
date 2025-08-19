@@ -15,4 +15,13 @@ dependencies = [
     "tqdm>=4.67.1",
     "langchain-community>=0.3.27",
     "langgraph>=0.6.5",
+    "fastapi>=0.116.1",
+    "requests>=2.32.4",
+    "transformers>=4.55.2",
+    "diffusers>=0.35.0",
+    "torch>=2.8.0",
+    "pyttsx3>=2.99",
+    "uvloop>=0.21.0",
+    "accelerate>=1.10.0",
+    "uvicorn>=0.35.0",
 ]
